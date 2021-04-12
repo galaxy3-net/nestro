@@ -9,6 +9,11 @@ Vagrant.configure("2") do |config|
       linux.vm.synced_folder ".", "/vagrant", disabled: true
       config.vm.ignore_box_vagrantfile = true
 
+	  config.trigger.after :up do |trigger|
+    	trigger.name = "Complete Setup"
+	  	trigger.info = File.read("Description")
+	  end
+
       linux.vm.provider "virtualbox" do |vb| # specify hyper v vm
         vb.memory = 1024
         vb.cpus = 1
