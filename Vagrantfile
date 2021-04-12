@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
       linux.vm.synced_folder ".", "/vagrant", disabled: true
       config.vm.ignore_box_vagrantfile = true
 
-      linux.vm.provider "vbox" do |vb| # specify hyper v vm
+      linux.vm.provider "virtualbox" do |vb| # specify hyper v vm
         vb.memory = 1024
         vb.cpus = 1
     	vb.customize ["modifyvm", :id, "--description", File.read("Description")]
