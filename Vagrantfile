@@ -12,6 +12,7 @@ Vagrant.configure("2") do |config|
       linux.vm.provider "vbox" do |vb| # specify hyper v vm
         vb.memory = 1024
         vb.cpus = 1
+    	vb.customize ["modifyvm", :id, "--description", File.read("Description")]
       end
     end
   end

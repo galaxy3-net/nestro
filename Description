@@ -1,0 +1,19 @@
+Naboo (UCIBox)
+
+Nestro was the single moon of Demophon. It was home to a small Imperial scientific enclave which monitored the activity of Demophon's sun in order to warn of impending supernova.[2] It was destroyed along with the rest of the system when its star went supernova
+https://starwars.fandom.com/wiki/Nestro
+
+Trilogy machine built for student labs.  This machine is only included for student use only.
+
+Unauthorized use strictly prohibited.
+
+Users:
+	o vagrant / vagrant
+	o student / Goodluck!
+
+Instructions:
+
+	Connecting to the Box:
+
+	ssh student@192.168.200.105
+
