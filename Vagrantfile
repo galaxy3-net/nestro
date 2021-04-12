@@ -14,6 +14,8 @@ Vagrant.configure("2") do |config|
 	  	trigger.info = File.read("Description")
 	  end
 
+	config.vm.synced_folder "../../Downloads", "/Downloads", owner: "1001", group: "1001", mount_options: ["fmode=777", "dmode=777"], create: true
+
       linux.vm.provider "virtualbox" do |vb| # specify hyper v vm
         vb.memory = 1024
         vb.cpus = 1
